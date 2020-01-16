@@ -67,7 +67,7 @@ body {
 .task.completed {
     background-color: #91A6BA;
     text-decoration: line-through;
-    color: 360000;
+    color: #360000;
 }
 
 .clear-task {
