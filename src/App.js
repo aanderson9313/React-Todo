@@ -72,6 +72,16 @@ class App extends React.Component {
       })
     });
   }
+
+
+  clearTask = event => {
+    event.preventDefault();
+    this.setState({
+      list: this.state.list.filter(task => {
+        return !task.completed
+      })
+    });
+  };
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
@@ -83,9 +93,9 @@ class App extends React.Component {
       <div className = "App">
         <div className = "Header">
           <h2>Honey Do List!</h2>
-          <TodoForm addTask = {this.addTask} />
+          <TodoForm className = "AddTask" clearTask={this.clearTask} addTask = {this.addTask} />
         </div>
-        <TodoList toggleTask={this.toggleTask} list={this.state.list} />
+        <TodoList toggleTask={this.toggleTask} list={this.state.list} clearTask={this.clearTask} />
       </div>
     );
   };
