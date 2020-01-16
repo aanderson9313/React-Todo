@@ -22,12 +22,32 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #ffd103e3;
     
 }
 
-
-
-
+.add-button {
+	box-shadow: 3px 3px 0px -1px #000000;
+	background-color:#ffcc00;
+	border-radius:8px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#360000;
+	font-family:Arial;
+	font-size:17px;
+	font-style:italic;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f5ce0a;
+}
+.add-button:hover {
+	background-color:#fafafa;
+}
+.add-button:active {
+	position:relative;
+	top:1px;
+}
 
 
 .task {
@@ -47,4 +67,29 @@ body {
     background-color: #91A6BA;
     text-decoration: line-through;
     color: 360000;
+}
+
+.clear-task {
+	box-shadow: 2px 0px 2px 1px #000000;
+	background:linear-gradient(to bottom, #ffdc3fe3 5%, rgb(255, 185, 9) 100%);
+	background-color:#E2A50E;
+	border-radius:16px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#360000;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 16px;
+	text-decoration:none;
+	text-shadow:1px 0px 0px #000000;
+}
+.clear-task:hover {
+	background:linear-gradient(to bottom, #fae877 5%, #c2ae2f 100%);
+	background-color:#edcf0e;
+}
+.clear-task:active {
+	position:relative;
+	top:1px;
 }
