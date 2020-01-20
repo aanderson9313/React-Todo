@@ -2,9 +2,12 @@
 // feel free to change this component.js into TodoList.js
 import React from 'react';
 import Task from './Todo';
+import ls from 'local-storage';
 
 
 const TodoList = props => {
+    
+
     return (
         <div className = "To-do List">
             {props.list.map(task => (
@@ -14,7 +17,10 @@ const TodoList = props => {
             <button className="clear-task" onClick={props.clearTask}>Clear Task</button>
             
         </div>
+        
     );
+    
 };
+
 
 export default TodoList;
